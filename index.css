@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #153677, #4e085f) ;
+    height: 100vh;
+}
+h1{
+    margin: 0;
+   text-align: center;
+   font-size: 60px;
+   color: white;
+   cursor: default;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 500px;
+    cursor: default;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+    background-color: #6f52be;
+}
+.pagination-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 25px;
+    position: absolute;
+}
+.pagination{
+    width: 430px;
+    border-radius: 38px;
+    box-shadow: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6f42d6;
+    padding: 10px 10px;
+}
+.pagination a{
+    padding: 10px 10px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c8c4d4;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+.control{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #775680;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+}
+.disabled{
+    color: rgb(70, 55, 55);
+    cursor:default;
+}
+.control:not(.disabled):hover,.pagenumber a:hover{
+    background-color: #c8c4d4;
+    color: white;
+}
+a.active{
+    background-color: #15061a;
+    color: white;
+}
+.hidden{
+    display: none;
+}
